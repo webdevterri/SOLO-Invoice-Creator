@@ -129,6 +129,12 @@ hr {
   margin-bottom: 30px;
 }
 
+.note-copy {
+  font-size: 12px;
+  font-weight: 400;
+  color: #F5F5F5;
+}
+
 .btn-invoice {
   background-color: #3a69d2;
   color: white;
