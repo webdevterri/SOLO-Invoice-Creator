@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1c1c1c;
+}
+
+.content-box {
+  background-color: #1f2937;
+}
+
+.top {
+  background-color: #3a69d2;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.btn-service {
+  background-color: #d1d4f4;
+  color: #4a4e74;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  border: 2px solid white;
+}
+
+.task, .total {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.notes, .total-amount {
+  font-size: 12px;
+  font-weight: 600;
+}
