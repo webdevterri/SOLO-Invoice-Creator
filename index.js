@@ -102,10 +102,9 @@ function removeFuncPull() {
 document.getElementById('notesText').innerHTML = `<p class="note-copy">We accept cash, credit card, or PayPal</p>`
 
 btnSendInvoice.addEventListener("click", () => {
-  console.log("This button doesn't actuall do anything!")
+  alert("This button doesn't actually do anything!")
 })
 
 
 
-// TODO: add functionality to REMOVE text
-// TODO: make more DRY by putting add to current total inside a function (input the service's price when running the function) -- test with one button first!
+// TODO: make more "DRY"! Code is very repetative.
