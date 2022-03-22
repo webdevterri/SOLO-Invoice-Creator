@@ -15,7 +15,7 @@ btnWashCar.disabled = false;
 
 btnWashCar.addEventListener("click", () => {
   // adds service under task
-  document.getElementById('added-service').innerHTML = `
+  document.getElementById('added-service').innerHTML += `
   <div class="service-added">
   <div class="service-right-col">
   <div class="service-name">Wash Car</div>
@@ -32,17 +32,39 @@ btnWashCar.addEventListener("click", () => {
 })
 
 btnMowLawn.addEventListener("click", () => {
-  // function add $20 to #added-service
-
+  // adds service under task
+  document.getElementById('added-service').innerHTML += `
+  <div class="service-added">
+  <div class="service-right-col">
+  <div class="service-name">Mow Lawn</div>
+  <p class="remove-option">Remove</p>
+  </div>
+  <div class="service-cost"><span class="dollar-sign">$</span>20</div>
+  </div>
+  `
+  // adds to current total
   currentTotal = currentTotal + 20;
   document.getElementById("calculated-total").textContent = `$${currentTotal}`
+  // Disables the button from being clicked again
+  btnMowLawn.disabled = true;
 })
 
 btnPullWeeds.addEventListener("click", () => {
-  // function add $30 to #added-service
-
+  // adds service under task
+  document.getElementById('added-service').innerHTML += `
+  <div class="service-added">
+  <div class="service-right-col">
+  <div class="service-name">Pull Weeds</div>
+  <p class="remove-option">Remove</p>
+  </div>
+  <div class="service-cost"><span class="dollar-sign">$</span>30</div>
+  </div>
+  `
+  // adds to current total
   currentTotal = currentTotal + 30;
   document.getElementById("calculated-total").textContent = `$${currentTotal}`
+  // Disables the button from being clicked again
+  btnPullWeeds.disabled = true;
 })
 
 // Add notes

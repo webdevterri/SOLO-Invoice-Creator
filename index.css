@@ -112,6 +112,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   color: #F5F5F5;
+  margin-bottom: 1rem;
 }
 
 .service-right-col {
