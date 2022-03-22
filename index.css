@@ -130,6 +130,7 @@ h2 {
   font-weight: 400;
   color: #D5D4D8;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .service-cost {
