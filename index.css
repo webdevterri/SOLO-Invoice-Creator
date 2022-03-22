@@ -11,7 +11,8 @@ body {
 body {
   font-family: "Inter", sans-serif;
   background-color: #1c1c1c;
-  height: 100vh;
+  /* height: 100vh; */
+  margin-top: 20px;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -23,6 +24,7 @@ body {
   width: 40%;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .top {
@@ -103,6 +105,40 @@ h2 {
 .total {
   font-size: 12px;
   font-weight: 700;
+}
+
+.service-added {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #F5F5F5;
+}
+
+.service-right-col {
+  display: flex;
+  flex-direction: row;
+}
+
+.service-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.remove-option {
+  font-size: 8px;
+  font-weight: 400;
+  color: #D5D4D8;
+  margin-left: 10px;
+}
+
+.service-cost {
+  color: #F5F5F5;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.dollar-sign {
+  color: #918E9B;
 }
 
 hr {
