@@ -22,7 +22,7 @@ btnWashCar.addEventListener("click", () => {
   <div class="service-added" id="wash-car-service">
     <div class="service-right-col">
       <div class="service-name">Wash Car</div>
-      <p class="remove-option" id="remove-wash">Remove</p>
+      <p class="remove-option" id="remove-wash" onClick="removeFuncWash()">Remove</p>
     </div>
     <div class="service-cost"><span class="dollar-sign">$</span>10</div>
   </div>
@@ -33,16 +33,17 @@ btnWashCar.addEventListener("click", () => {
   // Disables the button from being clicked again
   btnWashCar.disabled = true;
 
-  // REMOVE FUNCTIONALITY
-  document.getElementById('remove-wash').addEventListener("click", ()=> {
-    const removeWashTask = document.getElementById('wash-car-service');
+  // removeFuncWash()
+
+})
+
+function removeFuncWash() {
+  const removeWashTask = document.getElementById('wash-car-service');
     removeWashTask.outerHTML = "";
     currentTotal = currentTotal - 10;
     document.getElementById("calculated-total").textContent = `$${currentTotal}`
     btnWashCar.disabled = false;
-  })
-})
-
+}
 
 btnMowLawn.addEventListener("click", () => {
   // adds service under task
